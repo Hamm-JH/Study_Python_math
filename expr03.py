@@ -54,6 +54,7 @@ def ex91():
 import matplotlib.pyplot as plt
 import numpy as np
 
+
 # 직교하는 직선
 def ex94():
     x = np.arange(-1, 6)    # x값
