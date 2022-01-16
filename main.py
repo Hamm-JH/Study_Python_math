@@ -12,4 +12,5 @@ if __name__ == '__main__':
     # expr.inExpr()
     # expr03.expr85()
     # expr03.ex87()
-    expr03.ex91()
+    # expr03.ex91()
+    expr03.ex94()

@@ -38,8 +38,10 @@ def ex87():
     plt.grid(color='0.8')
     plt.show()
 
+# 연립방정식을 풀기 위해 sympy에서 Symbol, solve메서드 임포트
 from sympy import Symbol, solve
 
+# 연립방정식 풀기
 def ex91():
     a = Symbol('a')
     b = Symbol('b')
@@ -49,3 +51,18 @@ def ex91():
     print(solve((ex1, ex2)))
 
 
+import matplotlib.pyplot as plt
+import numpy as np
+
+# 직교하는 직선
+def ex94():
+    x = np.arange(-1, 6)    # x값
+    y = 1/2 * x + 1/2       # 직선1
+    y2 = -2 * x + 7         # 직선1에 직교하는 직선
+
+    # 그래프를 그린다
+    plt.plot(x, y)
+    plt.plot(x, y2)
+    plt.axis('equal')
+    plt.grid(color = '0.8')
+    plt.show()
