@@ -78,3 +78,35 @@ def ex95():
     ex1 = -3/2*x + 6 - y    # 직선1의 식을 정의한다
     ex2 = 1/2*x + 2 - y     # 직선2의 식을 정의한다
     print(solve( (ex1, ex2) ))  # 연립방정식을 푼다. / solve안에 이중괄호 안 먹이면 '[]'이렇게 뜸
+
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+# 선분을 수직으로 이등분하는 직선
+def ex100():
+    # 기본이 되는 선분의 기울기와 절편
+    a1 = (5-1) / (6-0)
+    b1 = 1
+
+    # 선분의 중점
+    cx = (0+6) / 2
+    cy = (1+5) / 2
+
+    # 선분에 직교하는 직선의 기울기 (a2 = -1 / a1)
+    a2 = -1 / a1
+
+    # 선분에 직교하는 직선의 절편(b2 = y - a2 * x)
+    b2 = cy - a2 * cx
+
+    # 직선의 식
+    x = np.arange(0, 7)     # x값
+    y1 = a1 * x + b1        # 기본 직선
+    y2 = a2 * x + b2        # 수직이등분선
+
+    # 그린다
+    plt.plot(x, y1)
+    plt.plot(x, y2)
+    plt.axis('equal')
+    plt.grid(color='0.8')
+    plt.show()
