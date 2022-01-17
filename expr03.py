@@ -119,9 +119,21 @@ def ex105():
     # 각도
     th = np.arange(0, 360)
 
-    # 원주 위에 있는 점 P의 좌표
+    # 원주 위에 있는 점 P의 좌표를 구하는 방법
+    # sin, cos 함수를 넣으면 표의 값을 얻을 수 있으나 라디안이라고 부르는 '호도법' 단위로 지정해야 함.
+    # radians() : '도수법' 단위의 각도를 호도법 단위의 각도로 바꾸는 명령어
     x = np.cos(np.radians(th))
     y = np.sin(np.radians(th))
+
+    # 위의 x, y는 원점(0, 0)을 중심으로 원을 구하는 방법.
+    # 다른 중심점 (예: (2, 3))에서 원을 그리고 싶은 경우 아래와 같이 각각 더해주면 됨
+    # x = np.cos(np.radians(th)) + 2
+    # y = np.sin(np.radians(th)) + 3
+    
+    # 다음과 같이 쓰면 반지름 r인 원도 그릴 수 있음
+    # r = 5
+    # x = r * np.cos(np.radians(th))
+    # y = r * np.sin(np.radians(th))
 
     # 그리기
     plt.plot(x, y)
