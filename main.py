@@ -16,7 +16,8 @@ def expr03_functions():
     # expr03.ex95()       # 두 직선의 교점
 
     # .4 비례식과 삼각비
-    expr03.ex100()      #  .2 선분을 m:n으로 내분하는 점 / 수직이등분선의 식을 구하고 그래프 그리기
+    # expr03.ex100()      #  .2 선분을 m:n으로 내분하는 점 / 수직이등분선의 식을 구하고 그래프 그리기
+    expr03.ex105()      # .3 삼각비와 원 / 삼각비를 이용해 원 그리기
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
