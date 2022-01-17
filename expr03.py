@@ -67,3 +67,14 @@ def ex94():
     plt.axis('equal')
     plt.grid(color = '0.8')
     plt.show()
+
+
+from sympy import Symbol, solve
+
+# 두 직선의 교점
+def ex95():
+    x = Symbol('x')     # 문자 정의
+    y = Symbol('y')
+    ex1 = -3/2*x + 6 - y    # 직선1의 식을 정의한다
+    ex2 = 1/2*x + 2 - y     # 직선2의 식을 정의한다
+    print(solve( (ex1, ex2) ))  # 연립방정식을 푼다. / solve안에 이중괄호 안 먹이면 '[]'이렇게 뜸
