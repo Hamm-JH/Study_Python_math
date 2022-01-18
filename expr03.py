@@ -162,3 +162,39 @@ def ex109(x, y):
     rad = np.arctan2(x, y)  # 각도를 구한다(라디안)
     th = np.degrees(rad)    # 도수법으로 변환한다
     print(th)
+    
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+# 반지름이 r인 원을 방정식으로 그리기
+# r : 반지름
+def ex111(r):
+    # 원의 방정식
+    x = np.arange(-r, r + 1)    # 반지름
+    y = np.sqrt(r**2 - x**2)    # y
+
+    # 그리기
+    plt.plot(x, y)
+    plt.axis('equal')
+    plt.grid(color='0.8')
+    plt.show()
+
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+# 중심이 (a, b)인 반지름이 r인 원 그리기
+def ex113(a, b, r):
+    # 원의 방정식
+    x = np.arange(a-r, a+r+1)   # x : (a, b)를 중심으로
+                                # 반지름이 300인 원을 그리는데 필요한 범위
+    y = np.sqrt(r**2 - (x-a)**2) + b    # y : 원의 위쪽
+    y2 = -y + 2 * b                     # y2 : 원의 아래쪽
+
+    # 그리기
+    plt.plot(x, y)
+    plt.plot(x, y2)
+    plt.axis('equal')
+    plt.grid(color='0.8')
+    plt.show()
