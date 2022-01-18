@@ -33,9 +33,17 @@ def expr03_functions():
         # .2 직선으로 둘러싸인 영역의 면적 p117
         # 마우스를 사용하여 원 그리기 p120
 
+def expr04_functions():
 
+    # .1 벡터의 연산
+
+
+    pass
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
 
-    expr03_functions()
+    # 3장 방정식으로 도형 그리기
+    # expr03_functions()
+
+    expr04_functions()
