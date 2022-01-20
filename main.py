@@ -41,6 +41,10 @@ def expr04_functions():
     # .3 벡터의 방향 126
     expr04.ex127(2, 3)    # 127 벡터의 방향 구하기
 
+    # .4 벡터의 크기 128
+    # .5 벡터의 연산 129
+
+
     pass
 
 # Press the green button in the gutter to run the script.
