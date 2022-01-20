@@ -4,6 +4,7 @@
 # import matplotlib.pyplot as plt
 
 import expr03
+import expr04
 
 
 def expr03_functions():
@@ -35,8 +36,10 @@ def expr03_functions():
 
 def expr04_functions():
 
-    # .1 벡터의 연산
-
+    # .1 벡터의 연산 123
+    # .2 벡터의 성분 124
+    # .3 벡터의 방향 126
+    expr04.ex127(2, 3)    # 127 벡터의 방향 구하기
 
     pass
 
